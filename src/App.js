@@ -3,63 +3,64 @@ import './App.css';
 
 import LetterNode from './LetterNode';
 import Trie from './Trie';
+import { useState } from 'react';
 
 function App() {
+  const [newText, setNewText] = useState('');
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-
+        <p className="App-textPreview">&gt;|{newText}</p>
         <table>
           <tr>
             <td>
-              <button className="App-button">1
+              <button className="App-button" onClick={() => setNewText(`${newText}1`)}>1
               <p className="App-buttonText">&nbsp;</p>
               </button>
             </td>
             <td>
-              <button className="App-button">2
+              <button className="App-button" onClick={() => setNewText(`${newText}2`)}>2
               <p className="App-buttonText">abc</p>
               
               </button>
             </td>
             <td>
-              <button className="App-button">3
+              <button className="App-button" onClick={() => setNewText(`${newText}3`)}>3
               <p className="App-buttonText">def</p>
               </button>
             </td>
           </tr>
           <tr>
             <td>
-              <button className="App-button">4
+              <button className="App-button" onClick={() => setNewText(`${newText}4`)}>4
               <p className="App-buttonText">ghi</p>
               </button>
             </td>
             <td>
-              <button className="App-button">5
+              <button className="App-button" onClick={() => setNewText(`${newText}5`)}>5
               <p className="App-buttonText">jkl</p>
               </button>
             </td>
             <td>
-              <button className="App-button">6
+              <button className="App-button" onClick={() => setNewText(`${newText}6`)}>6
               <p className="App-buttonText">mno</p>
               </button>
             </td>
           </tr>
           <tr>
             <td>
-              <button className="App-button">7
+              <button className="App-button" onClick={() => setNewText(`${newText}7`)}>7
               <p className="App-buttonText">pqrs</p>
               </button>
             </td>
             <td>
-              <button className="App-button">8
+              <button className="App-button" onClick={() => setNewText(`${newText}8`)}>8
               <p className="App-buttonText">tuv</p>
               </button>
             </td>
             <td>
-              <button className="App-button">9
+              <button className="App-button" onClick={() => setNewText(`${newText}9`)}>9
               <p className="App-buttonText">wxyz</p>
               </button>
             </td>
@@ -67,6 +68,7 @@ function App() {
         </table>
       </header>
     </div>
+
   );
 }
 

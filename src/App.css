@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+.App-textPreview {
+  font-family: monospace;
+  font-weight: 800;
+  width: 350px;
+  height: 300px;
+  border: solid #203737 3px;
+  border-radius: 10px;
+  text-wrap: wrap;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  background-color: #04AA6D;
+  color: #203737;
+  text-align: left;
+  padding: 8px;
+}
+
 .App-buttonText {
   position: relative;
   top: -29px;
@@ -44,18 +60,18 @@
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
+  color: #203737;
   background-color: #04AA6D;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 9px #203737;
 }
 
-.App-button:hover {background-color: #3e8e41}
+.App-button:hover {background-color: #68aa6a}
 
 .App-button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  background-color: #7ed181;
+  box-shadow: 0 5px #333;
   transform: translateY(4px);
 }
 
