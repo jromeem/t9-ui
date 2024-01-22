@@ -32,7 +32,7 @@
   font-family: monospace;
   font-weight: 800;
   width: 350px;
-  height: 300px;
+  height: 270px;
   border: solid #203737 3px;
   border-radius: 10px;
   text-wrap: wrap;
@@ -46,17 +46,15 @@
 
 .App-buttonText {
   position: relative;
-  top: -29px;
+  top: -22px;
   font-size: 15px;
 }
 
 .App-button {
-  margin: 10px;
-  width: 100px;
-  height: 100px;
-  padding: 15px 25px;
-  padding-top: 10px;
-  font-size: 72px;
+  margin: 7px;
+  width: 70px;
+  height: 70px;
+  font-size: 48px;
   text-align: center;
   cursor: pointer;
   outline: none;
